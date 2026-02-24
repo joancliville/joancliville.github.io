@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Test Post"
+date: 2026-02-24
+---
+
+This is a test post to check that math formulae render correctly.
+
+Here is an inline formula: $E = mc^2$
+
+Here is the quadratic formula:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+And here is Euler's identity, often called the most beautiful equation in mathematics:
+
+$$
+e^{i\pi} + 1 = 0
+$$
+```
+
+Save with `Ctrl+S`, then push:
+```
+git add .
+git commit -m "add test post"
+git push

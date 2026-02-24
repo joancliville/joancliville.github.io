@@ -19,10 +19,3 @@ And here is Euler's identity, often called the most beautiful equation in mathem
 $$
 e^{i\pi} + 1 = 0
 $$
-```
-
-Save with `Ctrl+S`, then push:
-```
-git add .
-git commit -m "add test post"
-git push

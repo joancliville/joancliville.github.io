@@ -8,8 +8,9 @@ Antimemetics is the study of ideas that don't spread; the opposite of the intern
 
 This article is my personal attempt to put those two meanings in the same room, and build a mental model for why some information fails to propagate, and when that failure is a bug (i.e. we're missing something important) versus a feature (we're better off not amplifying it). If memes are the mind-viruses of the modern world, antimemes are the ones that come with a warning label… or worse, erase the label the moment you look at it.
 
+---
 
-#### The two meanings of antimemetics
+## The two meanings of antimemetics
 
 Before jumping into graphs and equations, it helps to be annoyingly clear about terms, because "antimemetics" is doing double duty in these two books. In the everyday Dawkins/internet sense, a meme is just an idea that replicates: it hops from mind to mind, tweet to tweet, group chat to group chat. Antimemetics, then, is the study of the opposite phenomenon: ideas that fail to replicate, or replicate only under weird conditions.
 
@@ -19,9 +20,9 @@ Before jumping into graphs and equations, it helps to be annoyingly clear about 
 
 Both are about transmission dynamics, not necessarily truth conditions. qntm explicitly noted that "mimetic or antimemetic doesn't mean true or false," and framed antimemes as ideas that aren't contagious or are hard to share for multiple reasons. A helpful stepping stone is to distinguish private knowledge, shared knowledge, and common knowledge (everyone knows that everyone knows). Antimemetic failure appears to show up in the gap between "some people know" and "it becomes common knowledge," because that gap is governed by network structure and thresholds rather than by correctness alone.
 
+---
 
-
-#### The share decision: the missing layer between heard and spread
+## The share decision: the missing layer between heard and spread
 
 A network model is blunt but useful: each connection is a potential transmission channel. A meme spreads when two things are true:
 
@@ -40,9 +41,9 @@ Or in plain English: you share when perceived benefits ($B$) outweigh friction c
 
 A clean non-trading example where $H$ is obviously real: vulnerability disclosure. People often don't blast a working exploit to the whole internet immediately, not because it's hard to explain (high $C$), but because dissemination can cause immediate damage (high $H$) before patches exist. That's antimemetics as a policy choice, not a mystery.
 
+---
 
-
-#### Topology: why good ideas get stuck inside bubbles
+## Topology: why good ideas get stuck inside bubbles
 
 Once you start treating an idea like a contagion, it becomes apparent that whether an idea becomes common knowledge is often less about its inherent quality, and more about whether the network can carry it. This is not cynicism; it's literally what epidemic/cascade models are built to study. A clean abstraction is the graph:
 
@@ -93,9 +94,9 @@ $$\frac{\#\{\text{adopted neighbours of } i\}}{\deg(i)} \ge \theta_i$$
 
 Small $\theta_i$ means "one exposure is enough" (simple contagion). Large $\theta_i$ means you need coordination, trust, repetition, social proof (complex contagion). The compressed, meme-able layer of an idea often behaves like a simple contagion, while the useful nuance behaves like a complex one: harder to transmit, easier to lose at the boundary.
 
+---
 
-
-#### Trading strategies are weird memes: the alpha kernel and implementation shell
+## Trading strategies are weird memes: the alpha kernel and implementation shell
 
 A trading strategy leak is a good stress test for all this, because what spreads is rarely the "strategy" as a single object. It's usually two different contagions riding the same network:
 
@@ -127,9 +128,9 @@ $$H \approx V \cdot \mathbb{E}\left[\alpha(N) - \alpha(N + \Delta N)\right]$$
 
 $V$ is your deployed capital, and $\Delta N$ is the additional adopters caused by you pushing this into the graph — including the uncomfortable fact that if you seed a supercritical cascade, $\Delta N$ might be… not small.
 
+---
 
-
-#### Some takeaways
+## Some takeaways
 
 If a strategy (or idea) doesn't spread, it's worth asking whether it's frictional or hazardous:
 

@@ -20,8 +20,8 @@
 
 title: Almost Random
 email: joan@cliville.com
-description: >- "Notes on probability, complex systems and markets"
-  baseurl: "" # the subpath of your site, e.g. /blog
+description: "Notes on probability, complex systems and markets"
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: orphanogenesis8
 github_username:  joancliville

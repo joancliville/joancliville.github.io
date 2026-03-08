@@ -24,7 +24,7 @@ Out of position, the flow reverses. **You** become the player **put to the decis
 
 A clean example could be the following. Suppose you hold A♠ Q♦ 7♣ 2♥ on the flop K♠ 8♠ 3♦. You have the nut flush draw, but the side cards are weak; your raw equity against many one-pair or set-heavy ranges might look respectable. That's the trick.
 
-In position, if the preflop raiser checks you can take a free card, if they bet you can call with a clearer plan, and scare turns may let you apply pressure with blockers. Out of position you are far more likely to face pot-sized bets, check-raises, and difficult turn decisions. Even when you hit the flush, runouts can become ugly — paired boards, straights completing, action dying on obvious cards — making it harder to value bet safely, control the pot, or avoid paying off when the board turns against you.
+In position, if the preflop raiser checks you can take a free card, if they bet you can call with a clearer plan, and scare turns may let you apply pressure with blockers. Out of position you are far more likely to face pot-sized bets, check-raises, and difficult turn decisions. Even when you hit the flush, runouts can become ugly, paired boards, straights completing, action dying on obvious cards, making it harder to value bet safely, control the pot, or avoid paying off when the board turns against you.
 
 #### From Equity to EV: A Simple Realisation Model
 
@@ -69,11 +69,11 @@ Same raw equity, but your usable equity is cut in half.
 
 In practice, our $R$ gets reduced by three mechanisms.
 
-**1. Denial** — you fold before showdown even though your hand had equity.
+**1. Denial**, you fold before showdown even though your hand had equity.
 
-**2. Reverse implied odds** — you improve but still lose a large pot. This is common in PLO when flushes run into higher flushes, straights run into redraws, or boards pair after you improve.
+**2. Reverse implied odds**, you improve but still lose a large pot. This is common in PLO when flushes run into higher flushes, straights run into redraws, or boards pair after you improve.
 
-**3. Under-realised value** — you hit but cannot extract value, because obvious draws complete, the board pairs, or action dies on scary rivers. Bare nut draws with weak side cards are deceptive for exactly this reason: your raw equity is real, but the path to collecting it is narrow.
+**3. Under-realised value**, you hit but cannot extract value, because obvious draws complete, the board pairs, or action dies on scary rivers. Bare nut draws with weak side cards are deceptive for exactly this reason: your raw equity is real, but the path to collecting it is narrow.
 
 #### Multiway Pots: Why Equity Gets Taxed
 
@@ -85,7 +85,7 @@ which decreases rapidly with each additional player. Just as importantly, multiw
 
 #### Equity Distribution vs Range
 
-Another key difference between PLO and Hold'em is how equity is distributed across ranges. In Hold'em, strong hands often dominate weaker ones — AA vs AK has roughly $E \approx 0.92$. In PLO, equities compress dramatically; many hands share similar equity on the flop: big draws, sets, combo draws, wrap straight draws.
+Another key difference between PLO and Hold'em is how equity is distributed across ranges. In Hold'em, strong hands often dominate weaker ones, AA vs AK has roughly $E \approx 0.92$. In PLO, equities compress dramatically; many hands share similar equity on the flop: big draws, sets, combo draws, wrap straight draws.
 
 This means that raw equity alone tells you much less about who is ahead. Instead, what matters is equity distribution: who holds the **top of range**, who holds the **nut advantage**, and who has **redraws**. A player may have similar average equity but far more high-equity hands, which translates into much higher EV.
 
@@ -105,7 +105,7 @@ $$SPR = \dfrac{S}{P}$$
 
 where $S$ = effective stack and $P$ = current pot.
 
-When $SPR \lesssim 2\text{--}3$, stacks go in quickly, fewer decisions remain, so realisation tends to be higher — you commit money and let equity run. When $SPR \gtrsim 6\text{--}10$, the same raw equity can produce very different EV depending on position, nuttiness and redraw potential. More streets mean more opportunities to get pushed off hands, pay off stronger hands or lose value when obvious draws complete. Turn decisions become especially important because pot-sized bets drastically change the pot geometry.
+When $SPR \lesssim 2\text{--}3$, stacks go in quickly, fewer decisions remain, so realisation tends to be higher, you commit money and let equity run. When $SPR \gtrsim 6\text{--}10$, the same raw equity can produce very different EV depending on position, nuttiness and redraw potential. More streets mean more opportunities to get pushed off hands, pay off stronger hands or lose value when obvious draws complete. Turn decisions become especially important because pot-sized bets drastically change the pot geometry.
 
 Suppose your flop equity is $E \approx 0.40$. At low SPR with $R = 0.60$: $E_{\text{effective}} = 0.60 \cdot 0.40 = 0.24$. At high SPR, OOP, multiway with $R = 0.30$: $E_{\text{effective}} = 0.30 \cdot 0.40 = 0.12$. Same equity on paper, but your usable equity is halved. That's why deep PLO often feels like you're constantly folding equity: the game gives you theoretical shares (yeah!!), then charges you rent to access them (ouch).
 
@@ -125,4 +125,4 @@ Our simple model is $E_{\text{effective}} = R \cdot E$. Raw equity only matters 
 
 The core trap of PLO is thinking in raw equity when the real game is **realisation**. Your hand can have plenty of $E$ and still lose money if $R$ is low. Position, SPR, nut advantage, and board structure all determine whether your equity actually turns into EV.
 
-In other words: in PLO you don't just have equity — you have to **earn the right to realise it**.
+In other words: in PLO you don't just have equity, you have to **earn the right to realise it**.

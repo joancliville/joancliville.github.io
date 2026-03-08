@@ -283,4 +283,4 @@ The best antimeme might be the one you almost remember... right before
 it gets arbitraged away.
 
 
-*PS: Shoutout to my friend Marc for revising my "Business School math" and confirming it is indeed, math. He's doing fantastic work at the [Eric and Wendy Schmidt Center](https://marcfm.com/), check it out!*
+*PS: Shoutout to my friend Marc for revising my "Business School math" and confirming it is indeed, math. He's doing fantastic work at the Eric and Wendy Schmidt Center, check it [out](https://marcfm.com/)!*

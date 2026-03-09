@@ -4,7 +4,7 @@ title: "Seeing the Hand: How Reports Reprice Beliefs"
 date: 2026-03-09
 ---
 
-I recently read (admittedly late) a [Kevin Mak tweet](https://x.com/KevinLMak/status/1859432472397701440?s=20),, where he talks about how a short seller's report is an additional piece of information, akin to getting to see someone else's hand in poker. That framing stuck with me. If you spend enough time in markets, it's almost inevitable that a short report or activist campaign will land on one of your positions. When it happens, the experience feels a bit like someone at the table suddenly flashing a card you weren't supposed to see.
+I recently read (admittedly late) a Kevin Mak tweet, where he talks about how a short seller's report is an additional piece of information, akin to getting to see someone else's hand in poker. That framing stuck with me. If you spend enough time in markets, it's almost inevitable that a short report or activist campaign will land on one of your positions. When it happens, the experience feels a bit like someone at the table suddenly flashing a card you weren't supposed to see.
 
 This article is my attempt to formalise that intuition, markets are collective beliefs, prices are weighted expectations, and reports are pieces of evidence that changes the information set. You don't need to accept every claim for the game to change: credible details shift the odds, and force everyone to play the next street differently.
 
